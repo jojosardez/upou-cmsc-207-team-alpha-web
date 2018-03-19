@@ -1,1 +1,0 @@
-JS files (UI validations, invoking APIs, etc.) should be in this folder.
