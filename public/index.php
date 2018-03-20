@@ -12,7 +12,7 @@
   <div align="center">
     <img src="../public/assets/images/upoulogo.png"/>
     <h1>Greetings, Earthlings!</h1>
-    <p>UPOU CMSC-207 Team Alpha - Web Application</p>
+    <p>&copy; UPOU CMSC-207 Team Alpha - Web Application</p>
   </div>
 </body>
 
