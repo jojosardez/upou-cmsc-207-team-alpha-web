@@ -12,6 +12,6 @@ env:
     - secure: IeLHDrpQKSjMtcJV7xonBdSUBXarIQTI+ufcytB6XnxdrkyzN2cwyQRdPE933lNiadnPQFQbV/qMJ5WTXZzXfMHkjMuFXcZJpc8Tv6S1w3JNI+SrHUeuPEL6etzWt3Mxx9PkBo7OcPbOBy9qaECaTkWBe8POqMo3vQfUqIxuywjfN6ftsGTvfQT/teosgmdacNXOMBVWmbWB2mnLknf2+2uu+BCVaxdugV+9Sb+5dgtjbyZT6o3Et1ouTDRm3gIHCxWKN5QBvXXikNE4TEnKTSX7/io+r3IfWQMeGCxgryNK6/4ccKl7+m+l8E1LjmcluKH3uCVEyYwfztWkLRFCCsF0D5qgumycSRdvylkfq8QN4y5VbM3oBBo907EdpP8IcZo5g5Bzf8Vu2lBBChiuv6prOeJ7ctXLUjT+WQDgGsMYfeaL562ctPcPtV6RxMaTnPdP9bjBRl4LEA/hZjmHhdsA6fFFELSmc8op/h1RB4T9AF6DIoODI/gew8E3mWRWKeuGCmAWCGLO1a3NYP30x69PZn9uG4qJj0LGuiFryGz8wBuJPOC2xArRRROQT0BxbIjQ65IT0ohMlbVvEpSAW2/ranO+CcBQvtB4Q+v6mkN98jqEg5ZXYqHo2Y+nFmS2eKzQkKSaxh18QiikEf2+/DIp/Vi2AcxM3NnAykijT64=
 
 script: 
-  "curl -T /public/index.php -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com"
+  "curl --ftp-create-dirs -T /public/index.php -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com"
 
     
