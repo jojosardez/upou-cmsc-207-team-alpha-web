@@ -4,15 +4,15 @@ php:
   - 7.0
 
 install:
-    - composer install
+  - composer install
 
 script: skip
 
 after_success:
-  "find vendor -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
-  "find src -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
-  "find public -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
-  "curl -T index.php --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/"
+  - "find vendor -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
+  - "find src -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
+  - "find public -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/{} \\;"
+  - "curl -T index.php --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://files.000webhost.com/public_html/"
 
 env:
   global:
